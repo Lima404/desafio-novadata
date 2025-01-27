@@ -21,3 +21,8 @@ Bem-vindo ao repositório do meu projeto desenvolvido como parte do desafio da N
    ```bash
    git clone https://github.com/seu-usuario/seu-projeto.git
    cd seu-projeto
+
+2. inicie o projeto:
+   ```bash
+   bun i
+   bun dev
