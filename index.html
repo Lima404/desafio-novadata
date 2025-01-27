@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link href="/src/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio layout</title>
+  </head>
+
+  <body>
+
+    <nav class="flex p-10 fixed z-10">
+      <img class="w-18 h-6" src="./src/assets/images/logo.svg" alt="logo" />
+      <ul class="flex space-x-10 ml-10">
+        <li class="text-xl cursor-pointer relative group">
+          <span>
+            Home
+          </span>
+          <!-- Line below the text -->
+          <span class="group-hover:block hidden absolute bottom-0 left-1/2 w-[20px] h-[2px] bg-white transform -translate-x-1/2"></span>
+        </li>
+        <li class="text-xl cursor-pointer relative group">
+          <span>
+            shop
+          </span>
+          <!-- Line below the text -->
+          <span class="group-hover:block hidden absolute bottom-0 left-1/2 w-[20px] h-[2px] bg-white transform -translate-x-1/2"></span>
+        </li>
+        <li class="text-xl cursor-pointer relative group">
+          <span>
+            about
+          </span>
+          <!-- Line below the text -->
+          <span class="group-hover:block hidden absolute bottom-0 left-1/2 w-[20px] h-[2px] bg-white transform -translate-x-1/2"></span>
+        </li>
+        <li class="text-xl cursor-pointer relative group">
+          <span>
+            contact
+          </span>
+          <!-- Line below the text -->
+          <span class="group-hover:block hidden absolute bottom-0 left-1/2 w-[20px] h-[2px] bg-white transform -translate-x-1/2"></span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- slide 1 -->
+        <div class="swiper-slide !grid !grid-cols-[1.59fr_1fr]">
+          <div>
+            <img class="w-full h-full" src="./src/assets/images/desktop-image-hero-1.jpg" alt="hero1">
+          </div>
+
+          <div class="flex flex-col justify-center bg-white text-black items-center h-full px-24 w-full relative">
+            <h2 class="font-extrabold text-4xl mb-6">Discover innovative ways to decorate</h2>
+
+            <p class="text-gray-500 mb-6 text-[0.900em] leading-6">We provide unmatched quality, comfort,and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+
+            <a class="flex hover:text-gray-500 w-full items-center justify-start " href="/">
+              <p class="tracking-[0.50em] text-2xl">Shop now</p>
+              <img class="w-16 h-4 hover:opacity-45" src="./src/assets/images/icon-arrow.svg" alt="">
+            </a>
+
+            <div class="flex absolute bottom-0 left-0">
+              <div class="swiper-button-next bg-gray-800 hover:bg-gray-700 px-5 py-[0.938rem]">
+                <img src="./src/assets/images/icon-angle-left.svg" alt="">
+              </div>
+              <div class="swiper-button-prev bg-gray-800 hover:bg-gray-700 px-5 py-[0.938rem]">
+                <img src="./src/assets/images/icon-angle-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- slide 2 -->
+        <div class="swiper-slide !grid !grid-cols-[1.59fr_1fr]">
+          <div>
+            <img class="w-full h-full" src="./src/assets/images/desktop-image-hero-2.jpg" alt="hero1">
+          </div>
+
+          <div class="flex flex-col justify-center bg-white text-black items-center h-full px-24 w-full relative">
+            <h2 class="font-extrabold text-4xl mb-6">We are available all across the globe</h2>
+
+            <p class="text-gray-500 mb-6 text-[0.920em] leading-6">With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don’t hesitate to contact us today.</p>
+
+            <a class="flex hover:text-gray-500 w-full items-center justify-start " href="/">
+              <p class="tracking-[0.50em] text-2xl">Shop now</p>
+              <img class="w-16 h-4 hover:opacity-45" src="./src/assets/images/icon-arrow.svg" alt="">
+            </a>
+
+            <div class="flex absolute bottom-0 left-0">
+              <div class="swiper-button-next bg-gray-800 hover:bg-gray-700 px-5 py-[0.938rem]">
+                <img src="./src/assets/images/icon-angle-left.svg" alt="">
+              </div>
+              <div class="swiper-button-prev bg-gray-800 hover:bg-gray-700 px-5 py-[0.938rem]">
+                <img src="./src/assets/images/icon-angle-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- slide 3 -->
+        <div class="swiper-slide !grid !grid-cols-[1.59fr_1fr]">
+          <div>
+            <img class="w-full h-full" src="./src/assets/images/desktop-image-hero-3.jpg" alt="hero1">
+          </div>
+
+          <div class="flex flex-col justify-center bg-white text-black items-center h-full px-24 w-full relative">
+            <h2 class="font-extrabold text-4xl mb-6">Manufactured with the best materials</h2>
+
+            <p class="text-gray-500 mb-6 text-[0.930rem] leading-6">Our modern furniture store provides a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+
+            <a class="flex hover:text-gray-500 w-full items-center justify-start " href="/">
+              <p class="tracking-[0.50em] text-2xl">Shop now</p>
+              <img class="w-16 h-4 hover:opacity-45" src="./src/assets/images/icon-arrow.svg" alt="">
+            </a>
+
+            <div class="flex absolute bottom-0 left-0">
+              <div class="swiper-button-next bg-gray-800 hover:bg-gray-700 px-5 py-[0.938rem]">
+                <img src="./src/assets/images/icon-angle-left.svg" alt="">
+              </div>
+              <div class="swiper-button-prev bg-gray-800 hover:bg-gray-700 px-5 py-[0.938rem]">
+                <img src="./src/assets/images/icon-angle-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid grid-cols-[0.945fr_1.124fr_0.945fr] col-span-full">
+      <img class="w-full h-full" src="./src/assets/images/image-about-dark.jpg" alt="">
+
+      <div class="bg-white text-black content-center self-center w-full h-full px-10 py-10 ">
+        <h2 class="text-[1.3rem] tracking-[0.50em] leading-10 font-bold mb-6 text-black uppercase">About our furniture</h2>
+        <p class="text-[0.920em] leading-[1.839rem] font-medium text-gray-500">
+          Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      
+      <img class="w-full h-full" src="./src/assets/images/image-about-light.jpg" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/script.js" type="module"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/script.js" type="module"></script>
+
+  </body>
+</html>
